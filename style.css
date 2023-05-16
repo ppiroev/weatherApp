@@ -1,0 +1,125 @@
+body, html, * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(60, 60, 60);
+}
+
+.content {
+    background-image: url(img/cloudy.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-content: center;
+    padding: 50px 0;
+    border-bottom: 2px solid black;
+}
+
+.header::after {
+    width: 100vw;
+    height: 197px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 50%;
+    background-color: white;
+    content: '';
+}
+
+.logo h3 {
+    font-size: 2rem;
+    z-index: 1;
+    position: relative;
+    font-style: italic;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    z-index: 1;
+    position: relative;
+}
+
+form {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.search-box {
+    display: grid;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+input {
+    all: unset;
+    background: transparent;
+    border: none;
+    border-bottom: 2px black solid;
+    width: 250px;
+    accent-color: white;
+    z-index: 1;
+    position: relative;
+}
+
+input::placeholder {
+    color: black
+}
+
+input:focus {
+    background: transparent;
+    border: none;
+    border-bottom: 2px black solid;
+}
+
+.weather-data {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 100px 100px;
+}
+
+.name-temp {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    gap: 25px;
+}
+
+.weather-description {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+}
+
+.city-name {
+    font-size: 3rem;
+}
+
+.description {
+font-size: 1.5rem;
+}
+
+.current-temp {
+font-size: 3.5rem;
+}
+
+.feels-like {
+    font-size: 1.5rem;
+}
+
+.max-temp {
+    font-size: 1.3rem;
+}
+
+.min-temp {
+    font-size: 1.3rem;
+}
